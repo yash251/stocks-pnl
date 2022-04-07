@@ -21,7 +21,7 @@ checkBtn.addEventListener('click', () => {
             var loss = (initial - current) * quantity;
             var lossPercentage = ((loss / initial) * 100).toFixed(2); 
           
-            output.textContent = `Aww you just lost ₹${loss} which is ${lossPercentage}% of the initial price.`;
+            output.textContent = `Uh Oh!😵 You just lost ₹${loss} which is ${lossPercentage}% of the initial price.`;
             if (parseFloat(lossPercentage) >= 50) {
                 main.style.backgroundColor = "red";
           }
@@ -31,20 +31,17 @@ checkBtn.addEventListener('click', () => {
             var profit = (current - initial) * quantity;
             var profitPercentage = ((profit / initial) * 100).toFixed(2);
 
-            output.textContent = `Yayy! You just earned profit of ₹${profit} which is ${profitPercentage}% of the initial price.`;
+            output.textContent = `Yayy!🤩 You just earned profit of ₹${profit} which is ${profitPercentage}% of the initial price.`;
             if (parseFloat(profitPercentage) >= 50) {
                 main.style.backgroundColor = "green";
           }
         } else {
-          console.log("No profit no loss");
-          output.textContent = "No profit no loss";
+          output.textContent = "No Profit, No Loss 😎";
         }
       } else {
-        console.log("Positive Amount Only");
-        output.textContent = "Positive Amount Only";
+        output.textContent = "Positive Amount Only 😑";
       }
     } else {
-      console.log("Please enter all details");
-      output.textContent = "Please enter all details";
+      output.textContent = "Please enter all the fields 🥱";
     }
   }

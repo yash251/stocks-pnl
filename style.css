@@ -1,8 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
+    background-color: antiquewhite;
+}
+
+main {
     text-align: center;
+    height: 100%;
+    background-color: antiquewhite;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 label {
     display: block;
     padding-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+h3 {
+    margin-top: 1rem;
+    color:rgb(94, 66, 66);
+}
+
+header {
+    background-color: cornflowerblue;
+    padding: 1rem;
+}
+
+button {
+    font-size: large;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    background-color: rgb(174, 104, 240);
+}
+
+label,
+input,
+#output {
+  margin: 1rem;
+  font-size: 1.3rem;
 }
