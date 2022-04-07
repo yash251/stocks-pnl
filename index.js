@@ -9,16 +9,16 @@ function calculateProfitAndLoss(initial, quantity, current) {
         // loss logic
         var loss = (initial - current) * quantity;
         var lossPercentage = (loss / initial) * 100; 
-        console.log(`loss is ${loss} which is ${lossPercentage}% of initial`);
+        output.innerText = (`loss is ${loss} which is ${lossPercentage}% of initial`);
     } 
     else if (initial < current) {
         // profit logic
         var profit = (current - initial) * quantity;
         var profitPercentage = (profit / initial) * 100;
-        console.log(`profit is ${profit} which is ${profitPercentage}% of initial`);
+        output.innerText = (`profit is ${profit} which is ${profitPercentage}% of initial`);
     } 
     else {
-        console.log(`no profit no loss`);
+        output.innerText = (`no profit no loss`);
     }
 }
 
