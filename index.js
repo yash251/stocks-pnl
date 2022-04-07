@@ -21,7 +21,11 @@ function calculateProfitAndLoss(initial, quantity, current) {
 }
 
 function clickHandler() {
-    
+    var ip = initialPrice.value;
+    var qty = stocksQuantity.value;
+    var curr = currentPrice.value;
+
+    calculateProfitAndLoss(ip, qty, curr);
 }
 
 checkBtn.addEventListener('click', clickHandler);
